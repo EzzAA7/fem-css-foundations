@@ -16,7 +16,7 @@
 }
 
 .speaker__wrapper {
-  width: 460px;
+  max-width: 460px;
 }
 
 .speaker__photo {
