@@ -104,6 +104,10 @@ h2 {
   color: var(--color-button-secondary-text);
 }
 
+.menu {
+  display: none;
+}
+
 @media (max-width: 1220px) {
   .button {
     font-size: 24px;
@@ -113,6 +117,22 @@ h2 {
 
   .button img {
     width: 20px;
+  }
+}
+
+@media (max-width: 840px) {
+  .menu {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header {
+    grid-template-columns: 33px 1fr 43px;
+    align-items: center;
+    justify-items: center;
   }
 }
 
