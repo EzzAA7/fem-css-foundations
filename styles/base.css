@@ -1,6 +1,7 @@
 :root {
   --color-primary: #ff7b54;
   --color-text-on-primary: #fff;
+  --color-text-on-secondary: #000;
   --color-button-border: var(--color-text-on-primary);
 
   --color-button-primary-bg: var(--color-text-on-primary);
@@ -13,9 +14,17 @@
 }
 
 body {
+  font-family: var(--font-family);
+}
+
+.body--primary {
   background-color: var(--color-primary);
   color: var(--color-text-on-primary);
-  font-family: var(--font-family);
+}
+
+.body--secondary {
+  background-color: var(--color-text-on-primary);
+  color: var(--color-primary);
 }
 
 a {
@@ -23,7 +32,8 @@ a {
   text-decoration: none;
 }
 
-p {
+p,
+h2 {
   margin: 0;
 }
 
@@ -60,6 +70,10 @@ p {
 .nav__list-item {
   margin-inline-end: 36px;
   font-size: 20px;
+}
+
+.main {
+  padding: 150px;
 }
 
 .button {
