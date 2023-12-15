@@ -9,9 +9,10 @@
 }
 
 .speakers__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 200px;
+  grid-row-gap: 120px;
 }
 
 .speaker__wrapper {
